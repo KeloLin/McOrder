@@ -9,4 +9,4 @@ spring:
     config:
       server:
         native:
-          search-location: classpath:/shared
+          search-locations: classpath:/shared
