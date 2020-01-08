@@ -1,40 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="69e1a139-5ad1-4dde-b9fd-8ef1eedc8156" name="Default Changelist" comment="增加数据库连接读取">
-      <change afterPath="$PROJECT_DIR$/menu/target/classes/com/mc/mapper/MenuMapper.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/menu/target/classes/com/mc/pojo/Menu.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/menu/target/classes/mapping/MenuMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user/src/main/java/com/mc/mapper/UserMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user/src/main/java/com/mc/pojo/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user/src/main/resources/mapping/UserMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user/target/classes/com/mc/mapper/UserMapper.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user/target/classes/com/mc/pojo/User.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user/target/classes/mapping/UserMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+    <list default="true" id="69e1a139-5ad1-4dde-b9fd-8ef1eedc8156" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/McOrder.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/account/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/account/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/configServer/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/configServer/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/configServer/src/main/resources/shared/account-dev.yml" beforeDir="false" afterPath="$PROJECT_DIR$/configServer/src/main/resources/shared/account-dev.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/configServer/src/main/resources/shared/menu-dev.yml" beforeDir="false" afterPath="$PROJECT_DIR$/configServer/src/main/resources/shared/menu-dev.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/configServer/src/main/resources/shared/user-dev.yml" beforeDir="false" afterPath="$PROJECT_DIR$/configServer/src/main/resources/shared/user-dev.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/configServer/target/classes/shared/account-dev.yml" beforeDir="false" afterPath="$PROJECT_DIR$/configServer/target/classes/shared/account-dev.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/configServer/target/classes/shared/menu-dev.yml" beforeDir="false" afterPath="$PROJECT_DIR$/configServer/target/classes/shared/menu-dev.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/configServer/target/classes/shared/user-dev.yml" beforeDir="false" afterPath="$PROJECT_DIR$/configServer/target/classes/shared/user-dev.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/eurekaServer/target/classes/com/mc/order/EurekaServerApplication.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mcorder.sql" beforeDir="false" afterPath="$PROJECT_DIR$/mcorder.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/menu/src/main/java/com/mc/MenuApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/menu/src/main/java/com/mc/MenuApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/menu/src/main/java/com/mc/controller/MenuHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/menu/src/main/java/com/mc/controller/MenuHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/menu/src/main/java/com/mc/mapper/MenuMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/menu/src/main/java/com/mc/mapper/MenuMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/menu/src/main/resources/mapping/MenuMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/menu/src/main/resources/mapping/MenuMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/menu/target/classes/com/mc/MenuApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/menu/target/classes/com/mc/MenuApplication.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/menu/target/classes/com/mc/controller/MenuHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/menu/target/classes/com/mc/controller/MenuHandler.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/menu/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/menu/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/order/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/user/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/user/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user/src/main/java/com/mc/UserApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/user/src/main/java/com/mc/UserApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user/src/main/java/com/mc/controller/UserHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/user/src/main/java/com/mc/controller/UserHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user/target/classes/com/mc/UserApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/user/target/classes/com/mc/UserApplication.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user/target/classes/com/mc/controller/UserHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/user/target/classes/com/mc/controller/UserHandler.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -58,7 +32,34 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/menu/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="124">
+              <caret line="17" column="26" selection-start-line="17" selection-start-column="26" selection-end-line="17" selection-end-column="26" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/order/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="323">
+              <caret line="17" column="25" selection-start-line="17" selection-start-column="25" selection-end-line="17" selection-end-column="25" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/user/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="129">
+              <caret line="17" column="26" selection-start-line="17" selection-start-column="26" selection-end-line="17" selection-end-column="26" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/menu/src/main/java/com/mc/mapper/MenuMapper.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="133">
@@ -70,9 +71,40 @@
           </provider>
         </entry>
       </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/configServer/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="102">
+              <caret line="17" column="26" selection-start-line="17" selection-start-column="26" selection-end-line="17" selection-end-column="26" />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/mcorder.sql">
-          <provider selected="true" editor-type-id="text-editor" />
+        <entry file="file://$PROJECT_DIR$/eurekaServer/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="95">
+              <caret line="5" column="27" selection-start-line="5" selection-start-column="27" selection-end-line="5" selection-end-column="27" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-228">
+              <caret line="24" column="13" selection-start-line="24" selection-start-column="13" selection-end-line="24" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/account/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="323">
+              <caret line="17" column="34" selection-start-line="17" selection-start-column="27" selection-end-line="17" selection-end-column="34" />
+            </state>
+          </provider>
         </entry>
       </file>
     </leaf>
@@ -92,6 +124,7 @@
       <find>McOrder</find>
       <find>order</find>
       <find>dataSou</find>
+      <find>spring-cloud-config-server</find>
     </findStrings>
     <dirStrings>
       <dir>F:\IDEA WorkSpace\McOrder\configServer</dir>
@@ -110,21 +143,16 @@
         <option value="$PROJECT_DIR$/configServer/src/main/java/com/mc/ConfigServerApplication.java" />
         <option value="$PROJECT_DIR$/.idea/workspace.xml" />
         <option value="$PROJECT_DIR$/eurekaServer/pom.xml" />
-        <option value="$PROJECT_DIR$/order/pom.xml" />
         <option value="$PROJECT_DIR$/order/src/main/java/com/mc/OrderApplication.java" />
         <option value="$PROJECT_DIR$/order/src/main/java/com/mc/controller/OrderHandler.java" />
         <option value="$PROJECT_DIR$/configServer/src/main/resources/application.yml" />
         <option value="$PROJECT_DIR$/order/src/main/resources/bootstrap.yml" />
         <option value="$PROJECT_DIR$/user/src/main/resources/bootstrap.yml" />
         <option value="$PROJECT_DIR$/menu/menu.iml" />
-        <option value="$PROJECT_DIR$/menu/pom.xml" />
         <option value="$PROJECT_DIR$/menu/src/main/resources/bootstrap.yml" />
-        <option value="$PROJECT_DIR$/account/pom.xml" />
         <option value="$PROJECT_DIR$/account/src/main/resources/bootstrap.yml" />
         <option value="$PROJECT_DIR$/menu/src/main/resources/mapping/MenuMapper.xml" />
         <option value="$PROJECT_DIR$/menu/src/main/java/com/mc/MenuApplication.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/configServer/pom.xml" />
         <option value="$PROJECT_DIR$/menu/src/main/java/com/mc/controller/MenuHandler.java" />
         <option value="$PROJECT_DIR$/configServer/src/main/resources/shared/account-dev.yml" />
         <option value="$PROJECT_DIR$/configServer/src/main/resources/shared/menu-dev.yml" />
@@ -132,10 +160,15 @@
         <option value="$PROJECT_DIR$/user/src/main/java/com/mc/mapper/UserMapper.java" />
         <option value="$PROJECT_DIR$/configServer/src/main/resources/shared/user-dev.yml" />
         <option value="$PROJECT_DIR$/user/src/main/java/com/mc/controller/UserHandler.java" />
-        <option value="$PROJECT_DIR$/user/pom.xml" />
         <option value="$PROJECT_DIR$/user/src/main/java/com/mc/UserApplication.java" />
         <option value="$PROJECT_DIR$/user/src/main/resources/mapping/UserMapper.xml" />
         <option value="$PROJECT_DIR$/menu/src/main/java/com/mc/mapper/MenuMapper.java" />
+        <option value="$PROJECT_DIR$/configServer/pom.xml" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/account/pom.xml" />
+        <option value="$PROJECT_DIR$/menu/pom.xml" />
+        <option value="$PROJECT_DIR$/order/pom.xml" />
+        <option value="$PROJECT_DIR$/user/pom.xml" />
       </list>
     </option>
   </component>
@@ -171,6 +204,21 @@
             <path>
               <item name="McOrder" type="b2602c69:ProjectViewProjectNode" />
               <item name="McOrder" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="McOrder" type="b2602c69:ProjectViewProjectNode" />
+              <item name="McOrder" type="462c0819:PsiDirectoryNode" />
+              <item name="menu" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="McOrder" type="b2602c69:ProjectViewProjectNode" />
+              <item name="McOrder" type="462c0819:PsiDirectoryNode" />
+              <item name="order" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="McOrder" type="b2602c69:ProjectViewProjectNode" />
+              <item name="McOrder" type="462c0819:PsiDirectoryNode" />
+              <item name="user" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -431,8 +479,8 @@
       <list>
         <item itemvalue="Spring Boot.UserApplication" />
         <item itemvalue="Spring Boot.ConfigServerApplication" />
-        <item itemvalue="Spring Boot.MenuApplication" />
         <item itemvalue="Spring Boot.EurekaServerApplication" />
+        <item itemvalue="Spring Boot.MenuApplication" />
         <item itemvalue="Spring Boot.OrderApplication" />
       </list>
     </recent_temporary>
@@ -451,7 +499,7 @@
       <workItem from="1578366983638" duration="9032000" />
       <workItem from="1578379423587" duration="4901000" />
       <workItem from="1578386029268" duration="1368000" />
-      <workItem from="1578455324754" duration="9145000" />
+      <workItem from="1578455324754" duration="10325000" />
     </task>
     <task id="LOCAL-00001" summary="修改">
       <created>1578383636909</created>
@@ -460,11 +508,18 @@
       <option name="project" value="LOCAL" />
       <updated>1578383636909</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="增加数据库连接读取">
+      <created>1578470012016</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1578470012016</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="27738000" />
+    <option name="totallyTimeSpent" value="28918000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -477,7 +532,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49861497" visible="true" weight="0.21045576" />
       <window_info id="Structure" order="1" sideWeight="0.50138503" side_tool="true" weight="0.25670242" />
@@ -489,7 +543,7 @@
       <window_info id="Web" order="7" sideWeight="0.50138503" side_tool="true" weight="0.25670242" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3286119" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49865952" weight="0.49433428" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49865952" visible="true" weight="0.49433428" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -502,7 +556,7 @@
       <window_info anchor="bottom" id="Database Changes" order="12" />
       <window_info anchor="bottom" id="Version Control" order="13" sideWeight="0.49932975" weight="0.3286119" />
       <window_info anchor="bottom" id="Application Servers" order="14" weight="0.3286119" />
-      <window_info active="true" anchor="bottom" id="Messages" order="15" visible="true" weight="0.3286119" />
+      <window_info anchor="bottom" id="Messages" order="15" weight="0.3286119" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -637,23 +691,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/order/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="25" selection-start-line="25" selection-end-line="25" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/user/user.iml" />
     <entry file="file://$PROJECT_DIR$/order/order.iml" />
     <entry file="file://$PROJECT_DIR$/menu/menu.iml" />
-    <entry file="file://$PROJECT_DIR$/account/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="418">
-          <caret line="22" column="51" selection-start-line="22" selection-start-column="51" selection-end-line="22" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$APPLICATION_CONFIG_DIR$/idea64.exe.vmoptions">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
@@ -672,20 +712,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="19">
           <caret line="1" column="12" selection-start-line="1" selection-start-column="12" selection-end-line="1" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/configServer/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="22">
-          <caret line="17" column="34" selection-start-line="17" selection-start-column="21" selection-end-line="17" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/eurekaServer/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-92">
-          <caret line="5" column="27" selection-start-line="5" selection-start-column="27" selection-end-line="5" selection-end-column="27" />
         </state>
       </provider>
     </entry>
@@ -715,13 +741,6 @@
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="901">
-          <caret line="59" column="56" selection-start-line="59" selection-start-column="56" selection-end-line="59" selection-end-column="56" />
         </state>
       </provider>
     </entry>
@@ -781,13 +800,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/user/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="291">
-          <caret line="29" column="37" selection-start-line="29" selection-start-column="37" selection-end-line="29" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/configServer/src/main/java/com/mc/ConfigServerApplication.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="133">
@@ -807,13 +819,6 @@
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/menu/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="310">
-          <caret line="33" column="44" selection-start-line="33" selection-start-column="44" selection-end-line="33" selection-end-column="44" />
         </state>
       </provider>
     </entry>
@@ -858,7 +863,11 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/mcorder.sql">
-      <provider selected="true" editor-type-id="text-editor" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
+        </state>
+      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/menu/src/main/java/com/mc/mapper/MenuMapper.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -867,6 +876,55 @@
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/eurekaServer/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="5" column="27" selection-start-line="5" selection-start-column="27" selection-end-line="5" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/account/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="17" column="34" selection-start-line="17" selection-start-column="27" selection-end-line="17" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/menu/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="124">
+          <caret line="17" column="26" selection-start-line="17" selection-start-column="26" selection-end-line="17" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/order/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="17" column="25" selection-start-line="17" selection-start-column="25" selection-end-line="17" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/user/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="129">
+          <caret line="17" column="26" selection-start-line="17" selection-start-column="26" selection-end-line="17" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-228">
+          <caret line="24" column="13" selection-start-line="24" selection-start-column="13" selection-end-line="24" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/configServer/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="17" column="26" selection-start-line="17" selection-start-column="26" selection-end-line="17" selection-end-column="26" />
         </state>
       </provider>
     </entry>
