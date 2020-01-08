@@ -1,8 +1,15 @@
 package com.mc.controller;
 
+import com.mc.mapper.MenuMapper;
+import com.mc.pojo.Menu;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
+
+import java.util.List;
 
 @RestController
 @RequestMapping("/menu")
@@ -11,8 +18,17 @@ public class MenuHandler {
     @Value("${server.port}")
     private String port;
 
-    @RequestMapping("/index")
+    @Autowired
+    private MenuMapper menuMapper;
+
+    @GetMapping("/index")
     public String index(){
         return "端口:"+this.port;
     }
+
+    @GetMapping("/findAll/{num}/{size}")
+    public List<Menu> findAll(@PathVariable("num") int num, @PathVariable("size") int size){
+        return menuMapper.findAll(num, size);
+    }
+
 }

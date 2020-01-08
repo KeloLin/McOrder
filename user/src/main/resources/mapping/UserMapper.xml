@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.mc.mapper.UserMapper">
+    <select id="findAll" parameterType="int" resultType="User">
+        SELECT * FROM M_USER LIMIT #{pageNum}, #{pageSize}
+    </select>
+
+    <select id="count" resultType="int">
+        SELECT COUNT(USERID) FROM M_USER
+    </select>
+
+    <select id="findById" parameterType="long" resultType="User">
+        SELECT * FROM M_USER WHERE USERID = #{userid}
+    </select>
+
+    <insert id="save" parameterType="User">
+        INSERT INTO M_USER (NAME, LOGINID, PASSWORD) VALUES(#{name}, #{loginid}, #{password})
+    </insert>
+
+    <update id="update" parameterType="User" >
+        UPDATE M_USER SET NAME = #{name}, PASSWORD = #{password}
+        WHERE LOGINID = #{loginid}
+    </update>
+
+    <delete id="deleteById" parameterType="long">
+        DELETE FROM M_USER WHERE USERID = #{userid}
+    </delete>
+</mapper>
