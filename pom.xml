@@ -14,8 +14,8 @@
         <module>order</module>
         <module>user</module>
         <module>menu</module>
-        <module>menu</module>
         <module>account</module>
+        <module>client</module>
     </modules>
 
     <parent>
