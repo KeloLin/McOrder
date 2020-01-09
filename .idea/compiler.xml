@@ -2,17 +2,18 @@
 <project version="4">
   <component name="CompilerConfiguration">
     <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
       <profile name="Maven default annotation processors profile" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="user" />
-        <module name="menu" />
-        <module name="eurekaServer" />
         <module name="configServer" />
+        <module name="client" />
+        <module name="user" />
         <module name="order" />
         <module name="account" />
-        <module name="client" />
+        <module name="menu" />
+        <module name="eurekaServer" />
       </profile>
     </annotationProcessing>
   </component>

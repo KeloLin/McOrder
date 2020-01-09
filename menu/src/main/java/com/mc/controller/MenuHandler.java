@@ -2,6 +2,7 @@ package com.mc.controller;
 
 import com.mc.mapper.MenuMapper;
 import com.mc.pojo.Menu;
+import com.mc.pojo.MenuVo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -27,8 +28,10 @@ public class MenuHandler {
     }
 
     @GetMapping("/findAll/{num}/{size}")
-    public List<Menu> findAll(@PathVariable("num") int num, @PathVariable("size") int size){
-        return menuMapper.findAll(num, size);
+    public MenuVo findAll(@PathVariable("num") int num, @PathVariable("size") int size){
+        List<Menu> list = menuMapper.findAll(num, size);
+        MenuVo menuVo = new MenuVo(0, "", menuMapper.count(), list);
+        return menuVo;
     }
 
 }

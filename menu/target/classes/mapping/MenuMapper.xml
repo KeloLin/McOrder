@@ -3,8 +3,20 @@
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.mc.mapper.MenuMapper">
 
-    <select id="findAll" resultType="Menu" parameterType="int">
-        SELECT * FROM M_MENU LIMIT #{pageNum}, #{pageSize}
+    <resultMap id="menuMap" type="Menu">
+        <id column="mid" property="mid"></id>
+        <result column="parentid" property="parentid"></result>
+        <result column="name" property="name"></result>
+        <result column="price" property="price"></result>
+        <result column="picurl" property="picurl"></result>
+        <result column="desc" property="desc"></result>
+        <association property="type" select="com.mc.mapper.TypeMapper.findById" column="typeid"></association>
+    </resultMap>
+
+    <select id="findAll" resultMap="menuMap" parameterType="int">
+        SELECT * FROM M_MENU
+        WHERE parentid is null or parentid = '-1'
+        LIMIT #{pageNum}, #{pageSize}
     </select>
 
     <select id="count" resultType="int">
