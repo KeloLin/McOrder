@@ -5,10 +5,7 @@ import com.mc.pojo.Menu;
 import com.mc.pojo.MenuVo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
@@ -32,6 +29,18 @@ public class MenuHandler {
         List<Menu> list = menuMapper.findAll(num, size);
         MenuVo menuVo = new MenuVo(0, "", menuMapper.count(), list);
         return menuVo;
+    }
+
+    @GetMapping("/deleteById/{id}")
+    public String deleteById(@PathVariable("id") long mid){
+        String s = "success";
+        try {
+            menuMapper.deleteById(mid);
+        } catch (Exception e) {
+            e.printStackTrace();
+            s = "failed";
+        }
+        return s;
     }
 
 }

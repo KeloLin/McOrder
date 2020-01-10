@@ -25,4 +25,8 @@ public class ClientHandler {
         return location;
     }
 
+    @GetMapping("/deleteById/{id}")
+    public String deleteById(@PathVariable("id") long mid){
+        return menuFeign.deleteById(mid);
+    }
 }
