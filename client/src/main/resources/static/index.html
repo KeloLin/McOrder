@@ -46,7 +46,8 @@
                 if(obj.event === 'update'){
                     layer.open({
                         type: 2,
-                        content: '/menu/menuUpdate'
+                        area: ['600px','400px'],
+                        content: '/menu/menuUpdate/'+ data.mid
                     });
                     //window.location.href="/client/save/"+data.id;
                 }

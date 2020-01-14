@@ -11,7 +11,7 @@ public interface MenuFeign {
     @GetMapping("/menu/findAll/{num}/{size}")
     public MenuVo findAll(@PathVariable("num") int num, @PathVariable("size") int size);
 
-    @DeleteMapping("/menu/deleteById/{id}")
+    @GetMapping("/menu/deleteById/{id}")
     public void deleteById(@PathVariable("id") long mid);
 
     @PostMapping("/menu/save")
@@ -20,6 +20,6 @@ public interface MenuFeign {
     @GetMapping("/menu/findMenuById/{id}")
     public Menu findMenuById(@PathVariable("id") long mid);
 
-    @PutMapping("/menu/update")
+    @PostMapping("/menu/update")
     public void update(Menu menu);
 }

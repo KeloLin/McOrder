@@ -34,7 +34,7 @@ public class MenuHandler {
         return menuVo;
     }
 
-    @DeleteMapping("/deleteById/{id}")
+    @GetMapping("/deleteById/{id}")
     public void deleteById(@PathVariable("id") long mid){
         menuMapper.deleteById(mid);
     }
@@ -44,12 +44,12 @@ public class MenuHandler {
         menuMapper.save(menu);
     }
 
-    @GetMapping("/findById/{id}")
+    @GetMapping("/findMenuById/{id}")
     public Menu findMenuById(@PathVariable("id") long mid){
         return menuMapper.findMenuById(mid);
     }
 
-    @PutMapping("/update")
+    @PostMapping("/update")
     public void update(@RequestBody Menu menu){
         menuMapper.update(menu);
     }

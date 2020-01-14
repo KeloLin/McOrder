@@ -23,7 +23,7 @@
         SELECT COUNT(MID) FROM M_MENU
     </select>
 
-    <select id="findMenuById" parameterType="long" resultType="Menu">
+    <select id="findMenuById" parameterType="long" resultMap="menuMap">
         SELECT * FROM M_MENU WHERE MID = #{mid}
     </select>
 
