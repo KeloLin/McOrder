@@ -28,13 +28,13 @@
     </select>
 
     <insert id="save" parameterType="Menu">
-        INSERT INTO M_MENU(NAME, PRICE, DESC) VALUES(#{name}, #{price}, #{desc})
+        INSERT INTO M_MENU(`NAME`, PRICE, `DESC`, TYPEID) VALUES (#{name}, #{price}, #{desc}, #{type.typeid})
     </insert>
 
     <update id="update" parameterType="Menu">
-        UPDATE M_MENU SET NAME = #{name}, PRICE = #{price}
+        UPDATE M_MENU SET `NAME` = #{name}, PRICE = #{price}, TYPEID = #{typeid}
         <if test="desc != null">
-            , DESC = #{desc}
+            , `DESC` = #{desc}
         </if>
         WHERE MID = #{mid}
     </update>

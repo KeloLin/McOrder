@@ -23,7 +23,7 @@
             var table = layui.table;
             table.render({
                 elem: '#test'
-                ,url:'/client/findAll'
+                ,url:'/menu/findAll'
                 ,title: '菜单列表'
                 ,cols: [
                     [
@@ -44,12 +44,15 @@
             table.on('tool(test)', function(obj){
                 var data = obj.data;
                 if(obj.event === 'update'){
-                    layer.alert('修改' + data);
+                    layer.open({
+                        type: 2,
+                        content: '/menu/menuUpdate'
+                    });
                     //window.location.href="/client/save/"+data.id;
                 }
                 if(obj.event === 'del'){
                     layer.confirm('确定要删除吗？', function (index) {
-                        window.location.href="/client/deleteById/"+data.mid;
+                        window.location.href="/menu/deleteById/"+data.mid;
                         layer.close(index);
                     })
                 }
