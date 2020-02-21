@@ -4,7 +4,7 @@
 <mapper namespace="com.mc.mapper.TypeMapper">
 
     <select id="findById" resultType="Type" parameterType="long">
-        SELECT * FROM M_TYPE WHERE TYPEID = #{typeid}
+        SELECT * FROM M_TYPE WHERE TYPE_ID = #{typeId}
     </select>
 
     <select id="findAll" resultType="Type" >

@@ -7,23 +7,23 @@
     </select>
 
     <select id="count" resultType="int">
-        SELECT COUNT(USERID) FROM M_USER
+        SELECT COUNT(USER_ID) FROM M_USER
     </select>
 
     <select id="findById" parameterType="long" resultType="User">
-        SELECT * FROM M_USER WHERE USERID = #{userid}
+        SELECT * FROM M_USER WHERE USER_ID = #{userId}
     </select>
 
     <insert id="save" parameterType="User">
-        INSERT INTO M_USER (NAME, LOGINID, PASSWORD) VALUES(#{name}, #{loginid}, #{password})
+        INSERT INTO M_USER (NAME, LOGIN_ID, PASSWORD) VALUES(#{name}, #{loginId}, #{password})
     </insert>
 
     <update id="update" parameterType="User" >
         UPDATE M_USER SET NAME = #{name}, PASSWORD = #{password}
-        WHERE LOGINID = #{loginid}
+        WHERE LOGINID = #{loginId}
     </update>
 
     <delete id="deleteById" parameterType="long">
-        DELETE FROM M_USER WHERE USERID = #{userid}
+        DELETE FROM M_USER WHERE USER_ID = #{userId}
     </delete>
 </mapper>

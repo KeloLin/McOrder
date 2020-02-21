@@ -16,6 +16,9 @@
         <module>menu</module>
         <module>account</module>
         <module>client</module>
+        <module>zuul</module>
+        <module>store</module>
+        <module>manager</module>
     </modules>
 
     <parent>

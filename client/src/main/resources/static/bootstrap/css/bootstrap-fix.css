@@ -1,0 +1,82 @@
+.container-fix {
+    height: 100%;
+    box-sizing: border-box;
+}
+
+.advertisement {
+    width: 100%;
+}
+
+.row-fix {
+    height: 100%;
+    padding: 15px 10px;
+    box-sizing: border-box;
+}
+
+.menu-left {
+    height: 100%;
+}
+
+.menu-left-item {
+    font-size: 30px;
+    padding: 4px;
+    margin: 4px;
+    background-color: #faebcc;
+}
+
+.menu-right {
+    height: 100%;
+    background-color: #d6d6d6;
+}
+
+.menu-right-item {
+    font-size: 30px;
+    padding: 4px;
+    margin: 4px;
+    background-color: #fff;
+}
+
+.carousel-inner {
+    height: 100%;
+}
+
+.carousel-inner > .item{
+    height: 100%;
+}
+
+.carousel-inner > .item > .advertisement-img {
+    width: 100%;
+    height: auto;
+}
+
+.carousel-indicators {
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    z-index: 15;
+    width: 60%;
+    padding-left: 0;
+    margin-left: -30%;
+    text-align: center;
+    list-style: none;
+}
+
+.carousel-indicators li {
+    display: inline-block;
+    width: 13px;
+    height: 13px;
+    margin: 2px;
+    text-indent: -999px;
+    cursor: pointer;
+    background-color: #000 \9;
+    background-color: rgba(0, 0, 0, 0);
+    border: 1px solid #999999;
+    opacity: 0.8;
+    border-radius: 10px;
+}
+.carousel-indicators .active {
+    width: 15px;
+    height: 15px;
+    margin: 0;
+    background-color: #ffcc55;
+}

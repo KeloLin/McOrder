@@ -4,43 +4,43 @@
 <mapper namespace="com.mc.mapper.MenuMapper">
 
     <resultMap id="menuMap" type="Menu">
-        <id column="mid" property="mid"></id>
-        <result column="parentid" property="parentid"></result>
-        <result column="name" property="name"></result>
-        <result column="price" property="price"></result>
-        <result column="picurl" property="picurl"></result>
-        <result column="desc" property="desc"></result>
-        <association property="type" select="com.mc.mapper.TypeMapper.findById" column="typeid"></association>
+        <id column="menu_id" property="menuId" />
+        <result column="parent_id" property="parentId" />
+        <result column="name" property="name" />
+        <result column="price" property="price"/>
+        <result column="pic_url" property="picUrl"/>
+        <result column="desc" property="desc" />
+        <association property="type" select="com.mc.mapper.TypeMapper.findById" column="type_id" />
     </resultMap>
 
     <select id="findAll" resultMap="menuMap" parameterType="int">
         SELECT * FROM M_MENU
-        WHERE parentid is null or parentid = '-1'
+        WHERE parent_id is null or parent_id = '-1'
         LIMIT #{pageNum}, #{pageSize}
     </select>
 
     <select id="count" resultType="int">
-        SELECT COUNT(MID) FROM M_MENU
+        SELECT COUNT(menu_id) FROM M_MENU
     </select>
 
     <select id="findMenuById" parameterType="long" resultMap="menuMap">
-        SELECT * FROM M_MENU WHERE MID = #{mid}
+        SELECT * FROM M_MENU WHERE menu_id = #{menuId}
     </select>
 
     <insert id="save" parameterType="Menu">
-        INSERT INTO M_MENU(`NAME`, PRICE, `DESC`, TYPEID) VALUES (#{name}, #{price}, #{desc}, #{type.typeid})
+        INSERT INTO M_MENU(`NAME`, PRICE, `DESC`, TYPE_ID) VALUES (#{name}, #{price}, #{desc}, #{type.typeId})
     </insert>
 
     <update id="update" parameterType="Menu">
-        UPDATE M_MENU SET `NAME` = #{name}, PRICE = #{price}, TYPEID = #{typeid}
+        UPDATE M_MENU SET `NAME` = #{name}, PRICE = #{price}, TYPEID = #{type.typeId}
         <if test="desc != null">
             , `DESC` = #{desc}
         </if>
-        WHERE MID = #{mid}
+        WHERE menu_id = #{menuId}
     </update>
 
     <delete id="deleteById" parameterType="long">
-        DELETE FROM M_MENU WHERE MID = #{mid}
+        DELETE FROM M_MENU WHERE menu_id = #{menuId}
     </delete>
 </mapper>
 

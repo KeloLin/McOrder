@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.mc.mapper.OrderDetailMapper">
+
+    <resultMap id="orderDetailMap" type="OrderDetail">
+        <id column="order_id" property="orderId"/>
+        <id column="menu_id" property="menuId"/>
+        <result column="price" property="price"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        ORDER_ID, MENU_ID, PRICE
+    </sql>
+    
+    <select id="findAllDetailByOrderId" resultMap="orderDetailMap" parameterType="long">
+        SELECT 
+        <include refid="Base_Column_List" />
+        FROM M_ORDER_DETAIL WHERE ORDER_ID = #{orderId}
+    </select>
+    
+    <insert id="saveOrderDetail" parameterType="OrderDetail">
+        INSERT INTO M_ORDER_DETAIL(<include refid="Base_Column_List" />)
+        VALUES (#{orderId}, #{menuId}, #{price})
+    </insert>
+
+</mapper>
+

@@ -7,8 +7,8 @@ import java.util.List;
 public interface UserMapper {
     public List<User> findAll(int pageNum, int pageSize);
     public int count();
-    public User findById(long userid);
+    public User findById(long userId);
     public void save(User user);
     public void update(User user);
-    public void deleteById(long userid);
+    public void deleteById(long userId);
 }

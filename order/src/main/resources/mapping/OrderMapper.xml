@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.mc.mapper.OrderMapper">
+
+    <resultMap id="orderMap" type="Order">
+        <id column="order_id" property="orderId" />
+        <result column="user_id" property="userId"/>
+        <result column="serial_number" property="serialNumber"/>
+        <result column="order_number" property="orderNumber"/>
+        <result column="price" property="price"/>
+        <result column="order_time" property="orderTime"/>
+        <result column="commit_time" property="commitTime"/>
+        <result column="end_time" property="endTime"/>
+        <result column="status" property="status"/>
+        <association property="details" select="com.mc.mapper.OrderDetailMapper.findAllDetailByOrderId"
+                     column="order_id"/>
+    </resultMap>
+    
+    <sql id="Base_Column_List">
+        ORDER_ID, serial_number, order_number, USER_ID, PRICE, ORDER_TIME, COMMIT_TIME, END_TIME, STATUS
+    </sql>
+
+    <select id="findAllOrderByUserId" parameterType="long" resultMap="orderMap">
+        SELECT
+        <include refid="Base_Column_List" />
+        FROM M_ORDER
+        WHERE USER_ID = #{userId}
+    </select>
+
+    <select id="findAllOrderByOrderId" parameterType="long" resultMap="orderMap">
+        SELECT
+        <include refid="Base_Column_List" />
+        FROM M_ORDER
+        WHERE ORDER_ID = #{orderId}
+    </select>
+
+</mapper>
+

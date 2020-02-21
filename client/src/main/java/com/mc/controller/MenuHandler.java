@@ -31,8 +31,8 @@ public class MenuHandler {
     }
 
     @GetMapping("/deleteById/{id}")
-    public String deleteById(@PathVariable("id") long mid){
-        menuFeign.deleteById(mid);
+    public String deleteById(@PathVariable("id") long menuId){
+        menuFeign.deleteById(menuId);
         return "redirect:/menu/redirect/index";
     }
 
@@ -44,10 +44,10 @@ public class MenuHandler {
     }
 
     @GetMapping("/menuUpdate/{id}")
-    public ModelAndView menuUpdate(@PathVariable("id") long mid){
+    public ModelAndView menuUpdate(@PathVariable("id") long menuId){
         ModelAndView modelAndView = new ModelAndView("menu_update");
 
-        modelAndView.addObject("menu",menuFeign.findMenuById(mid));
+        modelAndView.addObject("menu",menuFeign.findMenuById(menuId));
         modelAndView.addObject("list",typeFeign.findTypes());
         return modelAndView;
     }

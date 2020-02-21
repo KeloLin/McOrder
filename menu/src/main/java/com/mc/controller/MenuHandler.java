@@ -22,11 +22,6 @@ public class MenuHandler {
     @Autowired
     private MenuMapper menuMapper;
 
-    @GetMapping("/index")
-    public String index(){
-        return "端口:"+this.port;
-    }
-
     @GetMapping("/findAll/{num}/{size}")
     public MenuVo findAll(@PathVariable("num") int num, @PathVariable("size") int size){
         List<Menu> list = menuMapper.findAll(num, size);
@@ -35,8 +30,8 @@ public class MenuHandler {
     }
 
     @GetMapping("/deleteById/{id}")
-    public void deleteById(@PathVariable("id") long mid){
-        menuMapper.deleteById(mid);
+    public void deleteById(@PathVariable("id") long menuId){
+        menuMapper.deleteById(menuId);
     }
 
     @PostMapping("/save")
@@ -45,8 +40,8 @@ public class MenuHandler {
     }
 
     @GetMapping("/findMenuById/{id}")
-    public Menu findMenuById(@PathVariable("id") long mid){
-        return menuMapper.findMenuById(mid);
+    public Menu findMenuById(@PathVariable("id") long menuId){
+        return menuMapper.findMenuById(menuId);
     }
 
     @PostMapping("/update")

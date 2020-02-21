@@ -4,7 +4,7 @@ import lombok.Data;
 
 @Data
 public class Type {
-    private long typeid;
+    private long typeId;
     private String name;
     private String desc;
     private int sort;

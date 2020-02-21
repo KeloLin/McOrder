@@ -10,3 +10,15 @@ spring:
       server:
         native:
           search-locations: classpath:/shared
+#  cloud:
+#    config:
+#      server:
+#        git:
+#          uri: https://github.com/KeloLin/ConfigCenter/
+#          search-paths: config
+#          username: 810831037@qq.com
+#          password: Lzh19960216@
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
